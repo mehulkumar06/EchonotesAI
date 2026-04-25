@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EchoNotes AI Companion</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>EchoNotes AI</h1>
+        <p>Companion quick note</p>
+      </header>
+
+      <section class="card">
+        <label for="title">Title</label>
+        <input id="title" type="text" placeholder="Meeting takeaway" maxlength="120" />
+
+        <label for="note">Note</label>
+        <textarea id="note" rows="6" placeholder="Write your idea, task, or summary..."></textarea>
+
+        <label for="selectedText">Captured text (optional)</label>
+        <textarea id="selectedText" rows="3" placeholder="Selection from web page"></textarea>
+
+        <div class="actions">
+          <button id="captureBtn" class="secondary">Capture selection</button>
+          <button id="saveBtn" class="primary">Save note</button>
+        </div>
+
+        <p id="status" class="status"></p>
+      </section>
+
+      <section class="card">
+        <div class="row">
+          <h2>Sync settings</h2>
+        </div>
+        <label for="apiBaseUrl">API base URL</label>
+        <input id="apiBaseUrl" type="text" placeholder="http://localhost:5167" />
+
+        <label for="authToken">Auth token (optional)</label>
+        <input id="authToken" type="password" placeholder="Bearer token" />
+
+        <label class="checkbox-row">
+          <input id="syncEnabled" type="checkbox" />
+          Enable API sync
+        </label>
+
+        <button id="saveSettingsBtn" class="secondary">Save settings</button>
+      </section>
+
+      <section class="card">
+        <div class="row between">
+          <h2>Recent notes</h2>
+          <button id="refreshNotesBtn" class="link-btn">Refresh</button>
+        </div>
+        <ul id="notesList" class="notes-list"></ul>
+      </section>
+
+      <footer class="footer">
+        <button id="openAppBtn" class="secondary wide">Open EchoNotes AI (localhost)</button>
+      </footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

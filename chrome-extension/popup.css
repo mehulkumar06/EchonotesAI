@@ -1,0 +1,162 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 380px;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.header p {
+  margin: 2px 0 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #cbd5e1;
+  margin: 8px 0 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0b1220;
+  color: #f8fafc;
+  padding: 8px;
+  font-size: 13px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.secondary {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+.link-btn {
+  background: transparent;
+  color: #93c5fd;
+  border-color: #334155;
+}
+
+.status {
+  min-height: 18px;
+  font-size: 12px;
+  color: #a5f3fc;
+  margin-top: 8px;
+}
+
+.status.error {
+  color: #fecaca;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.checkbox-row input {
+  width: auto;
+}
+
+.notes-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  max-height: 180px;
+  overflow: auto;
+}
+
+.notes-list li {
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #0b1220;
+}
+
+.note-title {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.note-meta {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.note-body {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #e2e8f0;
+  white-space: pre-wrap;
+}
+
+.wide {
+  width: 100%;
+}
